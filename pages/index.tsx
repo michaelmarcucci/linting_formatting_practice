@@ -1,8 +1,14 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import Image from 'next/image';
+import React from 'react';
+import styles from '../styles/Home.module.css';
 
-export default function Home() {
+/**
+ * Home page of App
+ * @return {JSX.Element}
+ */
+
+export default function Home(): JSX.Element {
   return (
     <div className={styles.container}>
       <Head>
@@ -65,5 +71,5 @@ export default function Home() {
         </a>
       </footer>
     </div>
-  )
+  );
 }
